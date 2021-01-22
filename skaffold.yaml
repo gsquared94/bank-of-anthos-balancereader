@@ -16,9 +16,9 @@ apiVersion: skaffold/v2beta11
 kind: Config
 build:
   artifacts:
-  - image: gcr.io/bank-of-anthos/balancereader
+  - image: balancereader
     jib:
-      project: src/balancereader
+      project: .
 deploy:
   kubectl:
     manifests:
